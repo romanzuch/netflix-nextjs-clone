@@ -37,13 +37,13 @@ const LoginProfileIcon = (props) => {
 const AddProfileButton = () => {
     return (
         <div className='text-slate-300 hover:text-white cursor-pointer w-160 h-160 flex flex-col'>
-            <div className='h-[144px] w-[144px] flex justify-center items-center'>
+            <div className='h-[144px] w-[144px] p-8 flex justify-center items-center hover:bg-slate-300 rounded-md'>
                 <Image
-                    className='object-contain'
+                    className='object-contain addProfileButton'
                     src='/assets/plus-symbol-button.png'
                     alt='add button'
-                    height={64}
-                    width={64}
+                    height={80}
+                    width={80}
                 />
             </div>
             <p className='grow-0 text-xl'>

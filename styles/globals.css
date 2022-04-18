@@ -2,17 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  background: #141414;
-  font-family: SF Pro Display, SF Pro Icon, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+@layer base {
+  body {
+    @apply bg-[#141414] text-gray-300;
+    font-family: SF Pro Display, SF Pro Icon, Helvetica Neue, sans-serif;
+  }
 }

@@ -1,7 +1,7 @@
 module.exports = {
-  	content: [
-		'./src/**/*.{html,js}',
-		'./components/**/*.{html,js}'
+	content: [
+		"./pages/**/*.{js,ts,jsx,tsx}",
+		"./components/**/*.{js,ts,jsx,tsx}",
 	],
   	theme: {
 		letterSpacing: {
@@ -13,5 +13,10 @@ module.exports = {
 			}
 		},
   	},
+	  variants: {
+		  extend: {
+			  opacity: ['enabled']
+		  }
+	  },
   	plugins: [],
 }

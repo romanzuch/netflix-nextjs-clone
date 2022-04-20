@@ -13,6 +13,7 @@ function MediaEntry(props) {
                 src={props.data.imdbWallpaper}
                 height={1080}
                 width={1920}
+                alt={props.data.title}
             />
             <p
                 className='text-xs sm:text-xs md:text-md absolute bottom-[1vh] left-[1vw]'

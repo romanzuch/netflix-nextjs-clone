@@ -71,7 +71,6 @@ jspm_packages
 .next
 
 # media files
-/public/assets
 *.png
 *.jpg
 *.jpeg

@@ -1,0 +1,82 @@
+{
+	"Popular": [{
+			"title": "Dune",
+			"director": "Denis Villeneuve",
+			"actors": [
+				"Timothée Chalamet",
+				"Rebecca Ferguson",
+				"Zendaya"
+			],
+			"release": 2021,
+			"imdbScore": 8.1,
+			"imdbRating": 547429,
+			"imdbWallpaper": "https://m.media-amazon.com/images/M/MV5BMDVlOGQ5MTAtZmQ5Ni00ODllLWIzNDktMTJjYmY1Zjc2NmZmXkEyXkFqcGdeQXVyODIyOTEyMzY@._V1_.jpg"
+		},
+		{
+			"title": "The Grand Budapest Hotel",
+			"director": "Wes Anderson",
+			"actors": [
+				"Ralph Fiennes",
+				"F. Murray Abraham",
+				"Mathieu Amalric"
+			],
+			"release": 2014,
+			"imdbScore": 8.1,
+			"imdbRating": 777910,
+			"imdbWallpaper": "https://m.media-amazon.com/images/M/MV5BMTQ0NzAyNDI1MV5BMl5BanBnXkFtZTgwNjYwODYyMTE@._V1_.jpg"
+		},
+		{
+			"title": "The Lighthouse",
+			"director": "Robert Eggers",
+			"actors": [
+				"Robert Pattinson",
+				"Willem Dafoe",
+				"Valeriia Karaman"
+			],
+			"release": 2019,
+			"imdbScore": 7.4,
+			"imdbRating": 196911,
+			"imdbWallpaper": "https://m.media-amazon.com/images/M/MV5BNzkyYmNhN2MtYTg0Ny00YThlLTkwNGYtNGEzODkxMGYxYTFiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+		},
+		{
+			"title": "The Batman",
+			"director": "Matt Reeves",
+			"actors": [
+				"Robert Pattinson",
+				"Zoë Kravitz",
+				"Jeffrey Wright"
+			],
+			"release": 2022,
+			"imdbScore": 8.2,
+			"imdbRating": 347969,
+			"imdbWallpaper": "https://m.media-amazon.com/images/M/MV5BM2I1Y2Y1Y2UtYzRmZC00N2E1LWI1YjItNGIyMDAwYjU3YjJjXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg"
+		},
+		{
+			"title": "No Time to Die",
+			"director": "Cary Joji Fukunaga",
+			"actors": [
+				"Daniel Craig",
+				"Ana de Armas",
+				"Rami Malek"
+			],
+			"release": 2021,
+			"imdbScore": 7.3,
+			"imdbRating": 341161,
+			"imdbWallpaper": "https://m.media-amazon.com/images/M/MV5BN2ZmZDllYTctYzA3Yi00NGVjLTk0NjctOWUwYmUzMWNmZWI3XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+		},
+		{
+			"title": "Nightcrawler",
+			"director": "Dan Gilroy",
+			"actors": [
+				"Jake Gyllenhaal",
+				"Rene Russo",
+				"Bill Paxton"
+			],
+			"release": 2024,
+			"imdbScore": 7.8,
+			"imdbRating": 520842,
+			"imdbWallpaper": "https://m.media-amazon.com/images/M/MV5BMTc3NzQ3NTIyNl5BMl5BanBnXkFtZTgwMTg0NDg2MjE@._V1_.jpg"
+		}
+	],
+	"New": []
+}

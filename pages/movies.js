@@ -13,7 +13,7 @@ export default function Filme() {
             return (
               <div className='flex flex-col' key={key}>
                 <h1 className='text-4xl mb-8'>{data}</h1>
-                <div className='flex flex-row mb-8'>
+                <div className='flex flex-row w-full h-48'>
                 {
                   movieData[data].map((data, key) => {
                     return (

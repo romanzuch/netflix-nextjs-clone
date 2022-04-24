@@ -30,7 +30,7 @@ export default function List(props) {
             <h1 className='text-2xl mb-4 mr-4 h-fit'>{props.title}</h1>
             <ChevronRightIcon textSize='small' className='text-transparent transition ease-in-out duration-300 group-hover:text-blue-300'/>
         </div>
-        <div className='flex flex-col content-center pt-4 overflow-x-scroll no-scrollbar h-[10rem]'>
+        <div className='flex flex-col content-center pt-4 px-4 overflow-x-scroll no-scrollbar h-[10rem]'>
             <div className='flex-col'>
                 {media != undefined ? (
                     <div className='flex flex-row'>

@@ -5,7 +5,7 @@ function MediaEntry(props) {
     
     return (
         <div
-            className='group flex flex-col min-w-[192px] min-h-[108px] w-[10vw] h-[10vh] mr-4 relative transition ease-in-out delay-100 duration-500 transform hover:scale-110 hover:z-50 select-none'
+            className='group flex flex-col min-w-[192px] min-h-[108px] w-[10vw] h-[10vh] mr-4 relative transition ease-in-out delay-100 duration-200 transform hover:scale-110 hover:z-50 select-none'
         >
             <Image
                 layout='fill'

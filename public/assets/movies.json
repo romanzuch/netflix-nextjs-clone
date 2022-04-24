@@ -7,6 +7,7 @@
 				"Rebecca Ferguson",
 				"Zendaya"
 			],
+			"new": true,
 			"release": 2021,
 			"imdbScore": 8.1,
 			"imdbRating": 547429,
@@ -20,6 +21,7 @@
 				"F. Murray Abraham",
 				"Mathieu Amalric"
 			],
+			"new": false,
 			"release": 2014,
 			"imdbScore": 8.1,
 			"imdbRating": 777910,
@@ -33,6 +35,7 @@
 				"Willem Dafoe",
 				"Valeriia Karaman"
 			],
+			"new": false,
 			"release": 2019,
 			"imdbScore": 7.4,
 			"imdbRating": 196911,
@@ -46,6 +49,7 @@
 				"Zoë Kravitz",
 				"Jeffrey Wright"
 			],
+			"new": true,
 			"release": 2022,
 			"imdbScore": 8.2,
 			"imdbRating": 347969,
@@ -59,6 +63,7 @@
 				"Ana de Armas",
 				"Rami Malek"
 			],
+			"new": true,
 			"release": 2021,
 			"imdbScore": 7.3,
 			"imdbRating": 341161,
@@ -72,6 +77,7 @@
 				"Rene Russo",
 				"Bill Paxton"
 			],
+			"new": false,
 			"release": 2024,
 			"imdbScore": 7.8,
 			"imdbRating": 520842,

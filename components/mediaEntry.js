@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import InfoIcon from '@mui/icons-material/Info';
 
+import { handleEntryClick } from '../utils/mediaEntryHandler';
+
 function MediaEntry(props) {
     
     return (
@@ -22,7 +24,7 @@ function MediaEntry(props) {
                     {props.title}
                 </p>
                 <div className='flex min-w-[90%] sm:text-xs md:text-md absolute bottom-[8px] left-[8px] content-center text-transparent translate-y-2 ease-out duration-500 delay-100 group-hover:text-gray-300 group-hover:-translate-y-0'>
-                    <InfoIcon fontSize='small' className='grow-0 cursor-pointer' />
+                    <InfoIcon fontSize='small' onClick={() => handleEntryClick(props.router, props.id)} className='grow-0 cursor-pointer' />
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import constants from '../utils/constants';
 
-export default {
+const requests = {
     popular: {
         title: 'Popular',
         url: `/trending/movie/week?api_key=${constants.API_KEY}&language=en-US`,
@@ -56,8 +56,15 @@ export default {
         url: `/discover/movie?api_key=${constants.API_KEY}&with_genres=53`,
         section: '53',
     },
+    history: {
+        title: 'History',
+        url: `/discover/movie?api_key=${constants.API_KEY}&with_genres=36`,
+        section: '36',
+    }
 };
 
 export const genres = [
-    'popular', 'action', 'comedy', 'horror', 'scifi', 'adventure', 'crime', 'documentary', 'fantasy', 'mystery', 'thriller'
+    'popular', 'action', 'comedy', 'horror', 'scifi', 'adventure', 'crime', 'documentary', 'fantasy', 'mystery', 'thriller', 'history',
 ]
+
+export default requests;

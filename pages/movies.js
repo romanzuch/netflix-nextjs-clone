@@ -1,6 +1,6 @@
 import requests from '../utils/requests';
 import List from '../components/list';
-import MovieDetails from '../components/movieDetails';
+import MediaDetails from '../components/mediaDetails';
 import { useEffect, useState } from 'react';
 
 export default function Filme(props) {
@@ -31,7 +31,7 @@ export default function Filme(props) {
             ))
           }
           {
-            (showMovieDetails === true) ? <MovieDetails id={props.id} router={props.router} /> : <></>
+            (showMovieDetails === true) ? <MediaDetails id={props.id} router={props.router} type='movie' /> : <></>
           }
         </div>
     </div>

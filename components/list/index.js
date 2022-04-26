@@ -41,6 +41,7 @@ export default function List(props) {
                                         title={data.title} 
                                         image={data.backdrop_path != null ? `${constants.IMAGE_URL}${data.backdrop_path}` : `${constants.IMAGE_URL}${data.poster_path}`}
                                         id={data.id}
+                                        router={props.router}
                                     />
                                 </div>
                             ))

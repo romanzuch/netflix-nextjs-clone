@@ -28,7 +28,7 @@ export default function List(props) {
     <div className='relative'>
         <div className='flex flex-row group'>
             <h1 className='text-2xl mb-4 mr-4 h-fit'>{props.title}</h1>
-            <ChevronRightIcon textSize='small' className='text-transparent transition ease-in-out duration-300 group-hover:text-blue-300'/>
+            <ChevronRightIcon textize='small' className='text-transparent transition ease-in-out duration-300 group-hover:text-blue-300'/>
         </div>
         <div className='flex flex-col content-center pt-4 px-4 overflow-x-scroll no-scrollbar h-[10rem]'>
             <div className='flex-col'>
@@ -39,7 +39,7 @@ export default function List(props) {
                                 <div key={key}>
                                     <MediaEntry 
                                         title={data.title} 
-                                        image={data.backdrop_path != null ? `${constants.IMAGE_URL}${data.backdrop_path}` : `${constants.IMAGE_URL}${data.poster_path}`}
+                                        image={data.poster_path != null ? `${constants.IMAGE_URL}${data.poster_path}` : `${constants.IMAGE_URL}${data.backdrop_path}`}
                                         id={data.id}
                                         router={props.router}
                                     />

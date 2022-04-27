@@ -25,7 +25,7 @@ export default function List(props) {
     }, [update]);
 
   return (
-    <div className='relative'>
+    <div className='relative mx-5'>
         <div className='flex flex-row group'>
             <h1 className='text-2xl mb-4 mr-4 h-fit'>{props.title}</h1>
             <ChevronRightIcon textize='small' className='text-transparent transition ease-in-out duration-300 group-hover:text-blue-300'/>

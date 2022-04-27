@@ -37,8 +37,8 @@ export default function MediaDetails(props) {
     }, [update]);
 
     return (
-        <div className='absolute z-50 w-[95vw] h-[70vh] bg-[#232323] rounded-2xl flex flex-col overflow-x-hidden overflow-y-auto outline-none focus:outline-none'>
-            <div className='imageContainer absolute left-0 w-[95vw] h-[50vh]'>
+        <div className='absolute -mt-20 z-50 mx-[2.5vw] w-[95vw] h-[80vh] bg-[#232323] rounded-2xl flex flex-col overflow-x-hidden overflow-y-auto outline-none focus:outline-none'>
+            <div className='imageContainer absolute left-0 w-[96vw] h-[50vh]'>
                 <Image
                     layout='fill'
                     objectFit='cover'
@@ -52,20 +52,26 @@ export default function MediaDetails(props) {
                 </div>
                 {
                     mediaDetails != null ? (
-                        <div className='absolute m-8 top-[50vh] flex flex-col font-thin'>
-                            <h1 className='text-4xl font-normal'>{mediaDetails.original_title}</h1>
-                            <h2 className='text-xl my-2'>{mediaDetails.tagline}</h2>
-                            <p className='mb-2'>{mediaDetails.overview}</p>
-                            <div className='flex flex-row justify-between'>
-                                <div className='flex flex-row place-items-center'>
+                        <div className='absolute m-[2vw] top-[50vh] w-[91vw] flex flex-col font-thin'>
+                            <h1 className='xl:text-4xl lg:text-2xl md:text-md text-lg font-semibold'>{mediaDetails.original_title}</h1>
+                            <h2 className='xl:text-xl lg:text-lg md:text-md text-sm my-2'>{mediaDetails.tagline}</h2>
+                            <p className='xl:text-lg lg:text-md text-sm mb-2'>{mediaDetails.overview}</p>
+                            <div className='flex flex-col md:flex-row justify-between'>
+                                <div className='flex flex-row place-items-center my-4 md:my-0'>
                                     <PlayCircleIcon className='mr-4 cursor-pointer' fontSize='large'/>
                                     <AddCircleOutlineIcon className='mr-4 cursor-pointer' fontSize='large' />
                                     <ThumbUpIcon className='mr-4 cursor-pointer' fontSize='medium' />
                                 </div>
-                                <div className='flex flex-row'>
-                                    <p><span className='font-normal'>Release</span> {mediaDetails.release_date}</p>
+                                <div className='flex flex-row xl:text-lg lg:text-md text-sm justify-between'>
+                                    <div className='flex flex-col md:flex-row'>
+                                        <span className='font-normal'>Release</span>
+                                        <p>{mediaDetails.release_date}</p>
+                                    </div>
                                     <p className='mx-4'>·</p>
-                                    <p><span className='font-normal'>Runtime</span> {mediaDetails.runtime} mins</p>
+                                    <div className='flex flex-col md:flex-row'>
+                                        <span className='font-normal'>Runtime</span>
+                                        <p>{mediaDetails.runtime} mins</p>
+                                    </div>
                                     <p className='mx-4'>·</p>
                                     <p>{mediaDetails.vote_average} <span><StarRateIcon className='-translate-y-0.5' fontSize='small'/></span>({mediaDetails.vote_count})</p>
                                 </div>

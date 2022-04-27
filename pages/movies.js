@@ -17,8 +17,8 @@ export default function Filme(props) {
   }, [props.id]);
 
   return (
-    <div className='m-5'>
-        <h1 className="text-4xl">Movies</h1>
+    <div className=''>
+        <h1 className="text-4xl mx-5">Movies</h1>
         <div className='flex flex-col mt-8'>
           {
             Object.entries(requests).map(([key, {title, url, section}]) => (

@@ -1,13 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
-import SearchButton from './header/searchButton';
-import NotificationButton from './header/notificationButton';
-import SettingsButton from './header/settingsButton';
-import NavigationSection from './header/navigationSection';
+import SearchButton from './searchButton';
+import NotificationButton from './notificationButton';
+import SettingsButton from './settingsButton';
+import NavigationSection from './navigationSection';
 
 const Header = () => {
     return (
-        <header className='top-0 sticky text-white py-4 flex flex-col sm:flex-row m-5 justify-between items-center'>
+        <header className='top-0 sticky bg-[#141414] text-white py-4 flex flex-col sm:flex-row m-5 justify-between items-center w-screen-full z-500'>
             <div className='mx-4'>
                 <Image
                     className='relative object-contain'

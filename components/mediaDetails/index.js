@@ -47,12 +47,12 @@ export default function MediaDetails(props) {
                 />
             </div>
             <div className='flex flex-row justify-between relative'>
-                <div className='flex items-center justify-center bg-[#232323] rounded-full h-8 w-8 cursor-pointer absolute right-0 m-4' onClick={() => {props.router.back()}}>
+                <div className='flex items-center justify-center bg-[#232323] rounded-full h-8 w-8 cursor-pointer absolute right-0 mx-4 my-8' onClick={() => {props.router.back()}}>
                     <CloseIcon className='m-2' fontSize='medium' />
                 </div>
                 {
                     mediaDetails != null ? (
-                        <div className='absolute m-[2vw] top-[50vh] w-[91vw] flex flex-col font-thin'>
+                        <div className='absolute m-[2vw] top-[50vh] w-[91vw] flex flex-col font-thin mt-8'>
                             <h1 className='xl:text-4xl lg:text-2xl md:text-md text-lg font-semibold'>{mediaDetails.original_title}</h1>
                             <h2 className='xl:text-xl lg:text-lg md:text-md text-sm my-2'>{mediaDetails.tagline}</h2>
                             <p className='xl:text-lg lg:text-md text-sm mb-2'>{mediaDetails.overview}</p>
@@ -62,7 +62,7 @@ export default function MediaDetails(props) {
                                     <AddCircleOutlineIcon className='mr-4 cursor-pointer' fontSize='large' />
                                     <ThumbUpIcon className='mr-4 cursor-pointer' fontSize='medium' />
                                 </div>
-                                <div className='flex flex-row xl:text-lg lg:text-md text-sm justify-between'>
+                                <div className='flex flex-row xl:text-lg lg:text-md text-sm justify-between mb-8'>
                                     <div className='flex flex-col md:flex-row'>
                                         <span className='font-normal'>Release</span>
                                         <p>{mediaDetails.release_date}</p>

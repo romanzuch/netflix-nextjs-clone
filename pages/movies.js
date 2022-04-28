@@ -17,17 +17,18 @@ export default function Filme(props) {
   }, [props.id]);
 
   return (
-    <div className=''>
+    <div className='flex flex-col'>
         <h1 className="text-4xl mx-5">Movies</h1>
         <div className='flex flex-col mt-8'>
           {
             Object.entries(requests).map(([key, {title, url, section}]) => (
-              <List 
-                key={key} 
-                title={title}
-                endpoint={url}
-                router={props.router}
-              />
+              <div key={key}>
+                <List 
+                  title={title}
+                  endpoint={url}
+                  router={props.router}
+                />
+              </div>
             ))
           }
           {

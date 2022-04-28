@@ -31,28 +31,26 @@ export default function List(props) {
             <ChevronRightIcon textize='small' className='text-transparent transition ease-in-out duration-300 group-hover:text-blue-300'/>
         </div>
         <div className='flex flex-col content-center pt-4 px-4 overflow-x-scroll no-scrollbar h-[10rem]'>
-            <div className='flex-col'>
-                {media != undefined ? (
-                    <div className='flex flex-row'>
-                        {
-                            Object.entries(media).map(([key, data]) => (
-                                <div key={key}>
-                                    <MediaEntry 
-                                        title={data.title} 
-                                        image={data.poster_path != null ? `${constants.IMAGE_URL}${data.poster_path}` : `${constants.IMAGE_URL}${data.backdrop_path}`}
-                                        id={data.id}
-                                        router={props.router}
-                                    />
-                                </div>
-                            ))
-                        }
-                    </div>
-                ) : 
-                (
-                    <></>
-                )
-                }
-            </div>
+            {media != undefined ? (
+                <div className='flex flex-row'>
+                    {
+                        Object.entries(media).map(([key, data]) => (
+                            <div key={key}>
+                                <MediaEntry 
+                                    title={data.title} 
+                                    image={data.poster_path != null ? `${constants.IMAGE_URL}${data.poster_path}` : `${constants.IMAGE_URL}${data.backdrop_path}`}
+                                    id={data.id}
+                                    router={props.router}
+                                />
+                            </div>
+                        ))
+                    }
+                </div>
+            ) : 
+            (
+                <></>
+            )
+            }
         </div>
         <div className='absolute top-[2rem] right-0 bg-gradient-to-l from-[#141414] h-[10rem] w-[8rem]' />
     </div>

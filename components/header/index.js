@@ -7,7 +7,7 @@ import NavigationSection from './navigationSection';
 
 const Header = () => {
     return (
-        <header className='top-0 sticky bg-[#141414] text-white py-4 flex flex-col sm:flex-row m-5 justify-between items-center w-screen-full z-500'>
+        <header className='top-0 sticky bg-[#141414] text-white py-4 flex flex-col sm:flex-row p-5 mb-5 justify-between items-center w-[100%] z-50'>
             <div className='mx-4'>
                 <Image
                     className='relative object-contain'

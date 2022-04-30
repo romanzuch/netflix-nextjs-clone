@@ -7,11 +7,11 @@ function MediaEntry(props) {
     
     return (
         <div
-            className='flex flex-col min-w-[192px] min-h-[108px] w-[10vw] h-[10vh] mr-4 transition ease-in-out delay-100 duration-200 transform hover:scale-110 cursor-pointer relative'
+            className='min-w-[192px] min-h-[108px] w-[10vw] h-[10vh] mr-4 transition ease-in-out delay-100 duration-200 transform hover:scale-110 cursor-pointer'
             onClick={() => handleEntryClick(props.router, props.id)}
         >
             <Image
-                layout='responsive'
+                layout='fill'
                 objectFit='cover'
                 objectPosition='center'
                 className='rounded-md'

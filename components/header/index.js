@@ -22,11 +22,6 @@ const Header = () => {
                 {/* here comes the links section */}
                 <NavigationSection />
 
-                <div className='flex flex-grow justify-evenly max-w-xs'>
-                    <SearchButton />
-                    <NotificationButton />
-                    <SettingsButton />
-                </div>
             </div>
         </header>
     )

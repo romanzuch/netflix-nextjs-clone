@@ -1,10 +1,10 @@
 import constants from '../utils/constants';
 
-const requests = {
-    popular: {
-        title: 'Popular',
+const movieRequests = {
+    trending: {
+        title: 'Trending',
         url: `/trending/movie/week?api_key=${constants.API_KEY}&language=en-US`,
-        section: 'popular',
+        section: 'trending',
     },
     action: {
         title: 'Action',
@@ -63,8 +63,58 @@ const requests = {
     }
 };
 
+const tvRequests = {
+    trending: {
+        title: 'Trending',
+        url: `/trending/tv/week?api_key=${constants.API_KEY}&language=en-US`,
+        section: 'trending',
+    },
+    action: {
+        title: 'Action & Adventure',
+        url: `/discover/tv?api_key=${constants.API_KEY}&with_genres=10759`,
+        section: '10759',
+    },
+    comedy: {
+        title: 'Comedy',
+        url: `/discover/tv?api_key=${constants.API_KEY}&with_genres=35`,
+        section: '35',
+    },
+    scifi: {
+        title: 'Sci-Fi & Fantasy',
+        url: `/discover/tv?api_key=${constants.API_KEY}&with_genres=10765`,
+        section: '10765',
+    },
+    crime: {
+        title: 'Crime',
+        url: `/discover/tv?api_key=${constants.API_KEY}&with_genres=80`,
+        section: '80',
+    },
+    documentary: {
+        title: 'Documentary',
+        url: `/discover/tv?api_key=${constants.API_KEY}&with_genres=99`,
+        section: '99',
+    },
+    mystery: {
+        title: 'Mystery',
+        url: `/discover/tv?api_key=${constants.API_KEY}&with_genres=9648`,
+        section: '9648',
+    },
+    history: {
+        title: 'Animation',
+        url: `/discover/tv?api_key=${constants.API_KEY}&with_genres=16`,
+        section: '16',
+    },
+    history: {
+        title: 'Soap',
+        url: `/discover/tv?api_key=${constants.API_KEY}&with_genres=10766`,
+        section: '10766',
+    }
+}
+
 export const genres = [
     'popular', 'action', 'comedy', 'horror', 'scifi', 'adventure', 'crime', 'documentary', 'fantasy', 'mystery', 'thriller', 'history',
 ]
 
-export default requests;
+export {
+    movieRequests, tvRequests
+};

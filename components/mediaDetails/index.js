@@ -53,7 +53,7 @@ export default function MediaDetails(props) {
                 {
                     mediaDetails != null ? (
                         <div className='absolute m-[2vw] top-[50vh] w-[91vw] flex flex-col font-thin mt-8'>
-                            <h1 className='xl:text-4xl lg:text-2xl md:text-md text-lg font-semibold'>{mediaDetails.original_title}</h1>
+                            <h1 className='xl:text-4xl lg:text-2xl md:text-md text-lg font-semibold'>{props.type === 'movie' ? mediaDetails.original_title : mediaDetails.name}</h1>
                             <h2 className='xl:text-xl lg:text-lg md:text-md text-sm my-2'>{mediaDetails.tagline}</h2>
                             <p className='xl:text-lg lg:text-md text-sm mb-2'>{mediaDetails.overview}</p>
                             <div className='flex flex-col md:flex-row justify-between'>
@@ -64,13 +64,13 @@ export default function MediaDetails(props) {
                                 </div>
                                 <div className='flex flex-row xl:text-lg lg:text-md text-sm justify-between mb-8'>
                                     <div className='flex flex-col md:flex-row'>
-                                        <span className='font-normal'>Release</span>
-                                        <p>{mediaDetails.release_date}</p>
+                                        <span className='font-normal'>{props.type === 'movie' ? 'Release' : 'Initial Release'}</span>
+                                        <p>{props.type === 'movie' ? mediaDetails.release_date : mediaDetails.first_air_date}</p>
                                     </div>
                                     <p className='mx-4'>·</p>
                                     <div className='flex flex-col md:flex-row'>
-                                        <span className='font-normal'>Runtime</span>
-                                        <p>{mediaDetails.runtime} mins</p>
+                                        <span className='font-normal'>{props.type === 'movie' ? 'Runtime' : 'Episodes'}</span>
+                                        <p>{props.type === 'movie' ? `${mediaDetails.runtime} mins` : mediaDetails.number_of_episodes}</p>
                                     </div>
                                     <p className='mx-4'>·</p>
                                     <p>{mediaDetails.vote_average} <span><StarRateIcon className='-translate-y-0.5' fontSize='small'/></span>({mediaDetails.vote_count})</p>

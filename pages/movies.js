@@ -1,4 +1,4 @@
-import requests from '../utils/requests';
+import { movieRequests } from '../utils/requests';
 import List from '../components/list';
 import MediaDetails from '../components/mediaDetails';
 import { useEffect, useState } from 'react';
@@ -21,7 +21,7 @@ export default function Filme(props) {
         <h1 className="text-4xl mx-5">Movies</h1>
         <div className='flex flex-col mt-8'>
           {
-            Object.entries(requests).map(([key, {title, url, section}]) => (
+            Object.entries(movieRequests).map(([key, {title, url, section}]) => (
               <div key={key}>
                 <List 
                   title={title}
